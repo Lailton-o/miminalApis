@@ -25,7 +25,7 @@ namespace MinApiDapper.Endpoints
             app.MapDelete("/tarefas/{id}", async (GetConnection connectionGetter, int id) =>
             {
                 using var con = await connectionGetter();
-                con.Delete(new Tarefa(id, "", ""));
+                con.Delete(new Tarefa(id, "", "", 0));
                 return Results.NoContent();
             });
 

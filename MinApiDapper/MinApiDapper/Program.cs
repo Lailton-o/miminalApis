@@ -10,6 +10,7 @@ builder.AddPersistence();
 var app = builder.Build();
 
 app.MapTarefasEndpoints();
+app.MapTiposTarefaEndpoints();
 
 app.UseSwagger();
 app.UseSwaggerUI(x => { });

@@ -3,5 +3,5 @@
 namespace MinApiDapper.Data
 {
     [Table("Tarefa")]
-    public record Tarefa(int Id, string Atividade, string Status);
+    public record Tarefa(int Id, string Atividade, string Status, int IdTipoTarefa);
 }
